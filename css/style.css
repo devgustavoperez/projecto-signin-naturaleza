@@ -19,12 +19,92 @@
     --font1:'Nunito Sans', sans-serif;
 }
 
-* { /*selector global*/
+* { /*selector global o universal*/
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box; /*para mayor control del tamaño total de los elementos*/
     font-family: var(--font1);
 }
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color0);
+    background-image: url(../imagenes/teemu-paananen-OOE4xAnBhKo-unsplash8\(1200px\).jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+section#hello {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    height: 500px;
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+
+    backdrop-filter: blur(5px);
+
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: var(--font0);
+    font-size: 3em;
+    margin: 20px 0px 5px 17px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-left: 17px;
+}
+
+section#hello > div#botones {
+    width: 90%;
+    margin-top: 90px;
+    margin-right: 10px;
+    margin-left: 10px;
     
+}
+
+section#hello > div#botones > a {
+    display: block; /*un enlace debajo del otro*/
+    width: 100%; /*ancho dentro del div*/
+    height: 30px; /*altura de cada botón*/
+    margin-top: 10px; /*espacio entre botones*/
+
+    font-size: 1.3em;
+    font-weight: lighter;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--color0);
+    border-radius: 10px;
+}
+
+section#hello > div#botones > a:hover {
+    background-color: var(--color1);
+    color: black;
+    cursor: pointer;
+}
+
+section#hello > div#botones > a#sign-up {
+    background: none;
+    border: 1px solid white;
+}
+section#hello > div#botones > a#sign-up:hover {
+    border: none;
+    background-color: var(--color1);
+    color: black;
+    cursor: pointer;
 }
