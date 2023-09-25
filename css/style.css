@@ -26,7 +26,7 @@
     font-family: var(--font1);
 }
 
-html, body {
+html, body.body1 {
     height: 100vh;
     width: 100vw;
     background-color: var(--color0);
@@ -36,7 +36,7 @@ html, body {
     background-size: cover;
 }
 
-main {
+main.main1 {
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -69,15 +69,15 @@ h2 {
     margin-left: 17px;
 }
 
-section#hello > div#botones {
-    width: 90%;
+div.botones {
+    width: 92%;
     margin-top: 90px;
     margin-right: 10px;
     margin-left: 10px;
     
 }
 
-section#hello > div#botones > a {
+a.boton1, a.boton2 {
     display: block; /*un enlace debajo del otro*/
     width: 100%; /*ancho dentro del div*/
     height: 30px; /*altura de cada botón*/
@@ -92,19 +92,52 @@ section#hello > div#botones > a {
     border-radius: 10px;
 }
 
-section#hello > div#botones > a:hover {
+a.boton1:hover {
     background-color: var(--color1);
     color: black;
     cursor: pointer;
 }
 
-section#hello > div#botones > a#sign-up {
+a.boton2 {
     background: none;
     border: 1px solid white;
 }
-section#hello > div#botones > a#sign-up:hover {
+a.boton2:hover {
     border: none;
     background-color: var(--color1);
     color: black;
     cursor: pointer;
+}
+
+/*------------pagina 2-----------------*/
+
+section#access {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    height: 400px;
+    width: 280px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+
+    backdrop-filter: blur(5px);
+
+    transform: translate(-50%, -50%);
+}
+
+div#botones-google {
+    margin-top: 170px;
+}
+
+div.botones > p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+div.botones > p > a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color2);
 }

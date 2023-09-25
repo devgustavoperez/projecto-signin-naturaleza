@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-in</title>
+    <link rel="shortcut icon" href="imagenes/favicon-hoja.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="body1">
+    <main class="main1">
+        <section id="access">
+            <div id="sign-in">
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <label for="iemail">Email</label>
+                        <input type="email" name="email" id="iemail">
+                    </div>
+                    <div class="campo">
+                        <label for="ipass">Password</label>
+                        <input type="password" name="pass" id="ipass">
+                    </div>
+                </form>
+                <a href="">Forgot password?</a>
+            </div>
+            <div class="botones" id="botones-google">
+                <a href="" class="boton2">SIGN IN WITH GOOGLE</a>
+                <p>
+                    Don't you have an account?<br><a href="#">Sign up</a> 
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
