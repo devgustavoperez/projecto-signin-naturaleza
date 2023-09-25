@@ -77,7 +77,7 @@ div.botones {
     
 }
 
-a.boton1, a.boton2 {
+a.boton1, a.boton2, input.boton1 {
     display: block; /*un enlace debajo del otro*/
     width: 100%; /*ancho dentro del div*/
     height: 30px; /*altura de cada botón*/
@@ -127,8 +127,64 @@ section#access {
     transform: translate(-50%, -50%);
 }
 
+div#sign-in{
+    width: 100%;
+    margin-top: 55px;
+    margin-left: 20px;
+}
+
+div.campo > label { /*quitar los labels*/
+    display: none;
+}
+
+div.campo > input {
+    color: white;
+    text-indent: 7px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 80%;
+    height: 25px;
+}
+
+div.campo > input::placeholder { /*editar el placeholder*/
+    color: white;
+    text-indent: 7px;
+}
+
+input.boton1 {
+    border: none;
+    height: 25px;
+    width: 80%;
+    margin-left: 10px;
+}
+
+input.boton1:hover {
+    background-color: var(--color1);
+    color: black;
+    cursor: pointer;
+}
+
+div#sign-in > form > a#forgot-pass {
+    display: block;
+    margin-top: 10px;
+    margin-left: 60px;
+    color: white;
+    text-decoration: none;
+
+}
+
 div#botones-google {
-    margin-top: 170px;
+    margin-top: 115px;
+    font-size: 0.8em;
+}
+
+div#botones-google > a#google {
+    height: 25px;
+    width: 220px;
+    margin-left: 20px; 
 }
 
 div.botones > p {

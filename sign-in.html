@@ -11,20 +11,21 @@
     <main class="main1">
         <section id="access">
             <div id="sign-in">
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
+                        <input type="email" name="email" id="iemail" autocomplete="email" required maxlength="50" placeholder="example@mail.com">
                         <label for="iemail">Email</label>
-                        <input type="email" name="email" id="iemail">
                     </div>
                     <div class="campo">
-                        <label for="ipass">Password</label>
-                        <input type="password" name="pass" id="ipass">
+                        <input type="password" name="pass" id="ipass" autocomplete="current-password" minlength="8" maxlength="20" required placeholder="password">
+                         <label for="ipass">Password</label>
                     </div>
+                    <input type="submit" value="SIGN IN" class="boton1">
+                    <a href="" id="forgot-pass">Forgot password?</a>
                 </form>
-                <a href="">Forgot password?</a>
             </div>
             <div class="botones" id="botones-google">
-                <a href="" class="boton2">SIGN IN WITH GOOGLE</a>
+                <a href="" class="boton2" id="google">SIGN IN WITH GOOGLE</a>
                 <p>
                     Don't you have an account?<br><a href="#">Sign up</a> 
                 </p>
